@@ -5,8 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestCar {
-    Car car ; 
+public class TestDemo {
+    Car car;
 	@Before
 	public void setUp() throws Exception {
 		car = new Car();
@@ -14,13 +14,9 @@ public class TestCar {
 
 	@Test
 	public void itShouldStartWhenKeyIsTurnedRight() {
-		String direction ="RIGHT";
-		
-		car.turnKey(direction);
-		
-		boolean state = car.isStarted();
-		System.out.println("hoooooo");
-		assertTrue(state);
+		String direction = "right";
+		car.isturned(direction);
+		boolean car = true ;
 	}
 
 }
